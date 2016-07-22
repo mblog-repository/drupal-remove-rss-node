@@ -1,0 +1,4 @@
+name = remove_rss_node
+description = Удаляет страницы /node и /rss
+package = nikitakiselev.ru
+core = 7.x

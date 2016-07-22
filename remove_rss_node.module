@@ -1,0 +1,13 @@
+<?php
+
+/**
+* HOOK_menu_alter
+*/
+function remove_rss_node_menu_alter(&$items) {
+	$items['node']['access callback'] = FALSE;
+	$items['rss.xml']['access callback'] = FALSE;
+
+	// Если нужна 404 ошибка на этих страницах
+	//unset($items['node']);
+	//unset($items['rss.xml']);
+}
